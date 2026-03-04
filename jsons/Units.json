@@ -1,0 +1,1052 @@
+[
+	{
+		"name": "Lander",
+		"unitType": "Civilian",
+		"movement": 2,
+		"requiredTech": "Basic Survival",
+		"cost": 100,
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
+			"Excess Food converted to Production when under construction",
+			"Requires at least [2] population"
+		],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Labor Drone",
+		"unitType": "Civilian",
+		//"upgradesTo": "Terraformer",
+		"requiredTech": "Basic Survival",
+		//"obsoleteTech": "Deep Extraction",
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"Can build [Land] improvements on tiles",
+			"Can build [Water] improvements on tiles",
+			"Automation is a primary action"
+		],
+		"cost": 70,
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Labor Drone",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "This unit is capable of reshaping terrain and establishing facilities vital to our factories' functioning, but it is incapable of self-defense."
+			}
+		]
+	},
+	/*
+	{
+		"name": "Anti-Labor Drone",
+		"unitType": "Melee Drone",
+		"uniqueTo": "Barbarians",
+		"requiredTech": "Basic Survival",
+		"obsoleteTech": "Basic Munitions",
+		"upgradesTo": "SR Drone Mk I",
+		"movement": 2,
+		"strength": 5,
+		"hurryCostModifier": 20,
+		"promotions": ["[Anti-Labor Drone] ability"],
+		"cost": 25,
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Anti-Labor Drone",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "When labor drones go wrong, they can quickly dismantle your terrain improvements."
+			}
+		]
+	},
+	{
+		"name": "Terraformer",
+		"unitType": "Civilian",
+		"movement": 4,
+		"hurryCostModifier": 20,
+		"requiredTech": "Deep Extraction",
+		"uniques": [
+			"Can build [Land] improvements on tiles",
+			"Can build [Lava] improvements on tiles",
+			"[-25]% construction time for [All] improvements",
+			"Automation is a primary action",
+			"Can pass through impassable tiles",
+			"Double movement in [Rough terrain]",
+			"Double movement in [Lava]",
+			"Costs [5] [Parts] <(modified by game speed)>"
+		],
+		"cost": 140,
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Terraformer",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "These more advanced labor units are especially adept at navigating difficult terrain and quickly building vital improvements."
+			}
+		]
+	},
+	{
+		"name": "Boring Machine",
+		"uniqueTo": "Ex Aerospace",
+		"replaces": "Terraformer",
+		"unitType": "Civilian",
+		"movement": 5,
+		"hurryCostModifier": 20,
+		"requiredTech": "Deep Extraction",
+		"uniques": [
+			"Can build [Land] improvements on tiles",
+			"Can build [Lava] improvements on tiles",
+			"[-50]% construction time for [All] improvements",
+			"Automation is a primary action",
+			"Can pass through impassable tiles",
+			"Ignores terrain cost",
+			"Costs [5] [Parts] <(modified by game speed)>"
+		],
+		"cost": 140,
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Boring Machine",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "Ex Aerospace's specialized labor units are the best on the moon at remaking Io's surface."
+			}
+		]
+	},
+	*/
+	{
+		"name": "Basic Drone",
+		"unitType": "Melee Drone",
+		"requiredTech": "Basic Survival",
+		//"obsoleteTech": "Basic Munitions",
+		//"upgradesTo": "SR Drone Mk I",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"hurryCostModifier": 20,
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Basic Drone",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "Lightly armed and not very dangerous, this simple drone is the first military unit we're able to build before rediscovering more advanced technologies."
+			}
+		]
+	},
+	{
+		"name": "Scouting Rover",
+		"unitType": "Scouting",
+		"movement": 2,
+		"strength": 3,
+		"cost": 15,
+		"hurryCostModifier": 20,
+		"requiredTech": "Basic Survival",
+		//"obsoleteTech": "Iterative Design",
+		//"upgradesTo": "Infiltration Rover",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"Ignores terrain cost",
+			"Withdraws before melee combat <with [50]% chance>"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Scouting Rover",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "These rovers aren't much for defending themselves or your factories, but they're good for exploring."
+			}
+		]
+	},
+	/*
+	{
+		"name": "Wildcat Rover",
+		"uniqueTo": "Wildcatters",
+		"replaces": "Scouting Rover",
+		"unitType": "Scouting",
+		"movement": 2,
+		"strength": 3,
+		"cost": 15,
+		"hurryCostModifier": 20,
+		"requiredTech": "Basic Survival",
+		"obsoleteTech": "Iterative Design",
+		"upgradesTo": "Infiltration Rover",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"Ignores terrain cost",
+			"Costs [2] [Parts] <(modified by game speed)>",
+			"Withdraws before melee combat <with [50]% chance>",
+			"Can see invisible [non-[Air]] units",
+			"Invisible to non-adjacent units",
+			"May enter foreign tiles without open borders",
+			"Can see over obstacles"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Wildcat Rover",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "Wildcatter rovers are uniquely good at sneaking around and scouting out new terrain to find new claims."
+			}
+		]
+	},
+	{
+		"name": "Pistol Drone",
+		"unitType": "Ranged Drone",
+		"movement": 2,
+		"range": 2,
+		"interceptRange": 2,
+		"strength": 4,
+		"rangedStrength": 5,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"requiredTech": "Projectiles",
+		"obsoleteTech": "Logistics",
+		"upgradesTo": "LR Drone Mk I",
+		"attackSound": "shot",
+		"uniques": [
+			"Costs [2] [Parts] <(modified by game speed)>"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Pistol Drone",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "Our first few advances in weaponry allow our drones to strike at a distance."
+			}
+		]
+	},
+	{
+		"name": "SR Drone Mk I",
+		"unitType": "Melee Drone",
+		"movement": 2,
+		"strength": 8,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"requiredTech": "Basic Munitions",
+		"obsoleteTech": "Synthetic Compounds",
+		"upgradesTo": "SR Drone Mk II",
+		"attackSound": "metalhit",
+		"uniques": [
+			"Costs [2] [Parts] <(modified by game speed)>"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Units/SR Drone Mk I",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "A more robust drone than our initial offerings, well suited for defending our territory."
+			}
+		]
+	},
+	{
+		"name": "Mobile Turret",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 12,
+		"range": 3,
+		"interceptRange": 3,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredTech": "Basic Munitions",
+		//"obsoleteTech": "Synthetic Compounds",
+		"upgradesTo": "Railgun",
+		"attackSound": "artillery",
+		"uniques": [
+			"Costs [3] [Parts] <(modified by game speed)>",
+			"[+200]% Strength <vs cities> <when attacking>",
+			"Must set up to ranged attack"
+		]
+	},
+	{
+		"name": "Light Crawler",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 12,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredTech": "Alloys",
+		"upgradesTo": "All-Terrain Crawler",
+		"obsoleteTech": "Distributed Assembly",
+		"uniques": [
+			"No defensive terrain bonus",
+			"Rough terrain penalty",
+			"Consumes [1] [Iron]",
+			"Costs [3] [Parts] <(modified by game speed)>"
+		],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "LR Drone Mk I",
+		"unitType": "Ranged Drone",
+		"movement": 2,
+		"range": 2,
+		"interceptRange": 2,
+		"strength": 6,
+		"rangedStrength": 8,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"requiredTech": "Logistics",
+		"upgradesTo": "LR Drone Mk II",
+		"obsoleteTech": "Long-Distance Targeting",
+		"attackSound": "shot",
+		"uniques": [
+			"Costs [3] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "SR Drone Mk II",
+		"unitType": "Melee Drone",
+		"movement": 2,
+		"strength": 10,
+		"cost": 70,
+		"hurryCostModifier": 20,
+		"requiredTech": "Synthetic Compounds",
+		"obsoleteTech": "Crystallography",
+		"upgradesTo": "Predator Drone",
+		"attackSound": "shot",
+		"uniques": [
+			"Costs [3] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Light Rotorcraft",
+		"unitType": "Melee Hover",
+		"movement": 4,
+		"strength": 10,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredTech": "Low-Atmosphere Flight",
+		"attackSound": "shot",
+		"uniques": [
+			"Can move after attacking",
+			"Unable to capture cities",
+			"Consumes [1] [Aluminum]",
+			"May Paradrop to [Terrain] tiles up to [5] tiles away",
+			"Costs [3] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Light Flyer",
+		"unitType": "Aircraft",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredTech": "Low-Atmosphere Flight",
+		"attackSound": "shot",
+		"uniques": [
+			"Consumes [1] [Aluminum]",
+			"Costs [3] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Stinger Rotorcraft",
+		"unitType": "Ranged Hover",
+		"movement": 4,
+		"strength": 8,
+		"rangedStrength": 10,
+		"interceptRange": 2,
+		"range": 2,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredTech": "Low-Atmosphere Flight",
+		"attackSound": "machinegun",
+		"uniques": [
+			"Can move after attacking",
+			"Consumes [1] [Aluminum]",
+			"May Paradrop to [Terrain] tiles up to [5] tiles away",
+			"Costs [3] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Infiltration Rover",
+		"unitType": "Scouting",
+		"movement": 3,
+		"strength": 10,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredTech": "Iterative Design",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"Costs [3] [Parts] <(modified by game speed)>",
+			"Withdraws before melee combat <with [50]% chance>",
+			"May enter foreign tiles without open borders",
+			"Invisible to non-adjacent units",
+			"Can see invisible [non-[Air]] units",
+			"Ignores terrain cost",
+			"Can see over obstacles"
+		]
+	},
+	{
+		"name": "Single-Stage Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 10,
+		"hurryCostModifier": 20,
+		"cost": 60,
+		"requiredTech": "Long-Distance Targeting",
+		"obsoleteTech": "High Orbit",
+		"upgradesTo": "Two-Stage Missile",
+		"attackSound": "missile",
+		"uniques": [
+			"Costs [3] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "High-Altitude Defender",
+		"unitType": "Siege",
+		"movement": 3,
+		"strength": 30,
+		"rangedStrength": 40,
+		"range": 3,
+		"interceptRange": 3,
+		"hurryCostModifier": 20,
+		"cost": 60,
+		"requiredTech": "Spaceflight",
+		"attackSound": "missile",
+		"uniques": [
+			"Costs [4] [Parts] <(modified by game speed)>",
+			"Must set up to ranged attack",
+			"[+200]% Strength <vs cities> <when attacking>"
+		],
+		"promotions": ["ASAT", "Launch Platform I", "Interceptor"]
+	},
+	{
+		"name": "LR Drone Mk II",
+		"unitType": "Ranged Drone",
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 20,
+		"range": 2,
+		"interceptRange": 2,
+		"hurryCostModifier": 20,
+		"cost": 60,
+		"attackSound": "machinegun",
+		"requiredTech": "Long-Distance Targeting",
+		"obsoleteTech": "Cybernetics",
+		"upgradesTo": "Minigun Drone",
+		"uniques": [
+			"Costs [4] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "All-Terrain Crawler",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 25,
+		"hurryCostModifier": 20,
+		"cost": 70,
+		"attackSound": "tankshot",
+		"requiredTech": "Distributed Assembly",
+		"obsoleteTech": "Planetary Engineering",
+		"upgradesTo": "Heavy Crawler",
+		"uniques": [
+			"Consumes [1] [Iron]",
+			"Costs [5] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Breacher",
+		"uniqueTo": "Kosprom",
+		"replaces": "All-Terrain Crawler",
+		"unitType": "Armored",
+		"movement": 3,
+		"strength": 25,
+		"hurryCostModifier": 20,
+		"cost": 70,
+		"attackSound": "tankshot",
+		"requiredTech": "Distributed Assembly",
+		"obsoleteTech": "Planetary Engineering",
+		"upgradesTo": "Heavy Crawler",
+		"uniques": [
+			"Consumes [1] [Iron]",
+			"Costs [5] [Parts] <(modified by game speed)>",
+			"[+300]% Strength <vs cities> <when attacking>",
+			"Can only attack [City] units",
+			"[+50]% Strength <when defending>"
+		],
+		"promotions": ["[Breacher] ability"]
+	},
+	{
+		"name": "Predator Drone",
+		"unitType": "Melee Drone",
+		"movement": 2,
+		"strength": 30,
+		"hurryCostModifier": 20,
+		"cost": 80,
+		"attackSound": "shot",
+		"requiredTech": "Crystallography",
+		"obsoleteTech": "Mantle Mining",
+		"upgradesTo": "Superpredator Drone",
+		"uniques": [
+			"Costs [4] [Parts] <(modified by game speed)>",
+			"Heals [15] damage if it kills a unit"
+		]	
+	},
+	{
+		"name": "Plasma Cutter Drone",
+		"uniqueTo": "Vision Bank",
+		"replaces": "Predator Drone",
+		"unitType": "Melee Drone",
+		"movement": 2,
+		"strength": 30,
+		"hurryCostModifier": 20,
+		"cost": 80,
+		"attackSound": "shot",
+		"requiredTech": "Crystallography",
+		"obsoleteTech": "Mantle Mining",
+		"upgradesTo": "Superpredator Drone",
+		"promotions": ["[Plasma Cutter Drone] ability", "Anti-Materiel"],
+		"uniques": [
+			"Costs [4] [Parts] <(modified by game speed)>",
+			"Heals [15] damage if it kills a unit"
+		]	
+	},
+	{
+		"name": "Heavy Crawler",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 40,
+		"hurryCostModifier": 20,
+		"cost": 60,
+		"requiredTech": "Planetary Engineering",
+		"obsoleteTech": "Geomagnetic Power",
+		"upgradesTo": "Assault Mech",
+		"attackSound": "tankshot",
+		"uniques": [
+			"Consumes [1] [Iron]",
+			"Costs [5] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Railgun",
+		"unitType": "Siege",
+		"movement": 3,
+		"strength": 35,
+		"rangedStrength": 40,
+		"range": 3,
+		"interceptRange": 3,
+		"hurryCostModifier": 20,
+		"cost": 60,
+		"requiredTech": "High-Temp Superconductors",
+		"attackSound": "artillery",
+		"uniques": [
+			"Must set up to ranged attack",
+			"[+200]% Strength <vs cities> <when attacking>",
+			"Consumes [1] [Iron]",
+			"Costs [5] [Parts] <(modified by game speed)>"
+		]
+	},
+
+	{
+		"name": "Laser Sat",
+		"unitType": "Satellite",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 10,
+		"interceptRange": 10,
+		"hurryCostModifier": 20,
+		"cost": 200,
+		"requiredTech": "High Orbit",
+		"obsoleteTech": "Interplanetary Transit",
+		"upgradesTo": "Flare Sat",
+		"attackSound": "jetgun",
+		"uniques": [
+			"[+150]% Strength <vs [Space] units>",
+			"[+150]% Strength <vs [Missile] units>",
+			"Consumes [1] [Aluminum]",
+			"Costs [5] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Two-Stage Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 100,
+		"rangedStrength": 100,
+		"range": 15,
+		"hurryCostModifier": 20,
+		"cost": 200,
+		"requiredTech": "High Orbit",
+		"attackSound": "missile",
+		"uniques": [
+			"Costs [5] [Parts] <(modified by game speed)>",
+			"Damage taken from interception reduced by [25]%"
+		]
+	},
+	{
+		"name": "Nuclear Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 15,
+		"cost": 600,
+		"requiredTech": "High Orbit",
+		"attackSound": "nuke",
+		"uniques": [
+			"Nuclear weapon of Strength [1]",
+			"Blast radius [2]",
+			"Only available <if [Tube Alloys Project] is constructed>",
+			"Consumes [1] [Actinides]",
+			"Consumes [1] [Parts]",
+			"Costs [50] [Parts] <(modified by game speed)>",
+			"Damage taken from interception reduced by [25]%"
+		]
+	},
+	{
+		"name": "Minigun Drone",
+		"unitType": "Ranged Drone",
+		"movement": 2,
+		"strength": 35,
+		"rangedStrength": 40,
+		"range": 2,
+		"interceptRange": 2,
+		"hurryCostModifier": 20,
+		"cost": 100,
+		"attackSound": "machinegun",
+		"requiredTech": "Cybernetics",
+		"obsoleteTech": "Interplanetary Transit",
+		"upgradesTo": "Autocannon Drone",
+		"uniques": [
+			"Costs [5] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Flare Sat",
+		"unitType": "Satellite",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 75,
+		"range": 10,
+		"interceptRange": 10,
+		"hurryCostModifier": 20,
+		"cost": 300,
+		"requiredTech": "Interplanetary Transit",
+		"attackSound": "jetgun",
+		"uniques": [
+			"[+150]% Strength <vs [Space] units>",
+			"[+150]% Strength <vs [Missile] units>",
+			"Consumes [1] [Helium-3]",
+			"Costs [5] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Autocannon Drone",
+		"unitType": "Ranged Drone",
+		"movement": 2,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 2,
+		"interceptRange": 2,
+		"hurryCostModifier": 20,
+		"cost": 200,
+		"attackSound": "machinegun",
+		"requiredTech": "Interplanetary Transit",
+		"upgradesTo": "Heavy Turret Drone",
+		"obsoleteTech": "Superluminal Motion",
+		"uniques": [
+			"Costs [10] [Parts] <(modified by game speed)>",
+			"[1] additional attacks per turn"
+		]
+	},
+
+
+	{
+		"name": "Orbital Bombardment Platform",
+		"unitType": "Space Station",
+		"movement": 2,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 50,
+		"hurryCostModifier": 20,
+		"cost": 1000,
+		"requiredTech": "Breakthrough Propulsion",
+		"attackSound": "nuke",
+		"uniques": [
+			"[This Unit] gains the [Reloading] status for [2] turn(s) <upon entering combat>",
+			"[Target Unit] is destroyed <upon damaging a [All] unit>",
+			"Instantly gain [1] [Rods] <every [10] turns> <upon turn end> <when below [5] [Rods]>",
+			"Instantly gain [-1] [Rods] <upon gaining the [Reloading] status>",
+			"Cannot attack <when below [1] [Rods]>",
+			"Limited to [1] per Civilization",
+			"Only available <if [Project Thor] is constructed>",
+			"Damage taken from interception reduced by [50]%",
+			"Cannot be carried by [All] units",
+			"[+200]% Strength <vs cities> <when attacking>",
+			"Destroys tile improvements when attacking",
+			"Costs [100] [Parts] <(modified by game speed)>",
+			"Consumes [1] [Helium-3]",
+			"Consumes [1] [Parts]",
+			"[This Unit] gets a name from the [Station] group",
+			"Destroys [non-[Capital]] cities instead of capturing"
+		]
+	},
+	{
+		"name": "Hammer of Dawn",
+		"uniqueTo": "Ex Aerospace",
+		"replaces": "Orbital Bombardment Platform",
+		"unitType": "Space Station",
+		"movement": 2,
+		"strength": 180,
+		"rangedStrength": 180,
+		"range": 50,
+		"hurryCostModifier": 20,
+		"cost": 1000,
+		"requiredTech": "Breakthrough Propulsion",
+		"attackSound": "nuke",
+		"uniques": [
+			"[This Unit] gains the [Reloading] status for [2] turn(s) <upon entering combat>",
+			"[Target Unit] is destroyed <upon damaging a [All] unit>",
+			"Instantly gain [1] [Rods] <every [8] turns> <upon turn end> <when below [5] [Rods]>",
+			"Instantly gain [-1] [Rods] <upon gaining the [Reloading] status>",
+			"Cannot attack <when below [1] [Rods]>",
+			"Limited to [1] per Civilization",
+			"Only available <if [Project Thor] is constructed>",
+			"Damage taken from interception reduced by [50]%",
+			"Cannot be carried by [All] units",
+			"[+200]% Strength <vs cities> <when attacking>",
+			"Destroys tile improvements when attacking",
+			"Costs [100] [Parts] <(modified by game speed)>",
+			"Consumes [1] [Helium-3]",
+			"Consumes [1] [Parts]",
+			"[This Unit] gets a name from the [Hammer] group",
+			"Destroys [non-[Capital]] cities instead of capturing"
+		]
+	},
+	{
+		"name": "Superpredator Drone",
+		"unitType": "Melee Drone",
+		"movement": 3,
+		"strength": 50,
+		"hurryCostModifier": 20,
+		"cost": 200,
+		"attackSound": "shot",
+		"requiredTech": "Mantle Mining",
+		"upgradesTo": "Hunter-Killer Drone",
+		"obsoleteTech": "Core Mining",
+		"uniques": [
+			"Costs [10] [Parts] <(modified by game speed)>",
+			"Heals [20] damage if it kills a unit"
+		]	
+	},
+	{
+		"name": "Assault Mech",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 60,
+		"hurryCostModifier": 20,
+		"cost": 200,
+		"attackSound": "tankshot",
+		"requiredTech": "Geomagnetic Power",
+		"uniques": [
+			"Costs [10] [Parts] <(modified by game speed)>",
+			"Consumes [1] [Iron]"
+		]	
+	},
+
+	{
+		"name": "Hunter-Killer Drone",
+		"unitType": "Melee Drone",
+		"movement": 3,
+		"strength": 60,
+		"hurryCostModifier": 20,
+		"cost": 300,
+		"attackSound": "shot",
+		"requiredTech": "Core Mining",
+		"uniques": [
+			"Costs [12] [Parts] <(modified by game speed)>",
+			"Heals [25] damage if it kills a unit"
+		]	
+	},
+	{
+		"name": "Heavy Turret Drone",
+		"unitType": "Ranged Drone",
+		"movement": 3,
+		"strength": 60,
+		"rangedStrength": 65,
+		"range": 2,
+		"interceptRange": 2,
+		"hurryCostModifier": 20,
+		"cost": 200,
+		"attackSound": "machinegun",
+		"requiredTech": "Superluminal Motion",
+		"uniques": [
+			"Costs [12] [Parts] <(modified by game speed)>",
+			"[1] additional attacks per turn"
+		],
+		"promotions": ["Interceptor", "ASAT"]
+	},
+
+	{
+		"name": "Tectonic Surge",
+		"unitType": "Quake",
+		"movement": 2,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 50,
+		"cost": 1000,
+		"attackSound": "nuke",
+		"requiredTech": "Tectonic Weapons",
+		"uniques": [
+			"Costs [100] [Parts] <(modified by game speed)>",
+			"Consumes [1] [Antimatter]",
+			"Consumes [1] [Parts]",
+			"Nuclear weapon of Strength [2]",
+			"Blast radius [3]",
+			"Only available <if [Tube Alloys Project] is constructed>",
+			"Only available <if [Seismic Dampening System] is constructed>",
+			"Cannot be carried by [All] units"
+		]
+	},
+
+	{
+		"name": "Alcubierre Drive",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 1000,
+		"requiredTech": "Superluminal Motion",
+		"uniques": [
+			"Consumes [1] [Antimatter]",
+			"Spaceship part <hidden from users>",
+			"Core miner part",
+			"Cannot be purchased",
+			"Only available <if [Hades Project] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Core Miner] in the Capital",
+			"Limited to [1] per Civilization",
+			"Only available <when [Scientific] Victory is enabled>",
+			"Costs [100] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Laser Drill",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 1000,
+		"requiredTech": "Tectonic Weapons",
+		"uniques": [
+			"Spaceship part <hidden from users>",
+			"Core miner part",
+			"Cannot be purchased",
+			"Only available <if [Hades Project] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Core Miner] in the Capital",
+			"Limited to [1] per Civilization",
+			"Only available <when [Scientific] Victory is enabled>",
+			"Costs [100] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Autonomous Control Unit",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 1000,
+		"requiredTech": "Hypercomputing",
+		"uniques": [
+			"Spaceship part <hidden from users>",
+			"Core miner part",
+			"Cannot be purchased",
+			"Only available <if [Hades Project] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Core Miner] in the Capital",
+			"Limited to [1] per Civilization",
+			"Only available <when [Scientific] Victory is enabled>",
+			"Costs [100] [Parts] <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Thermal Sheathing",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 1000,
+		"requiredTech": "Programmable Matter",
+		"uniques": [
+			"Consumes [1] [Aluminum]",
+			"Spaceship part <hidden from users>",
+			"Core miner part",
+			"Cannot be purchased",
+			"Only available <if [Hades Project] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Core Miner] in the Capital",
+			"Limited to [1] per Civilization",
+			"Only available <when [Scientific] Victory is enabled>",
+			"Costs [100] [Parts] <(modified by game speed)>"
+		]
+	},
+	
+	{
+		"name": "Programming Unit",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can generate a large amount of culture",
+			"Can instantly construct a [Server] improvement <by consuming this unit>",
+			"Empire enters a [8]-turn Golden Age <for [City-State] Civilizations> <by consuming this unit> <hidden from users>",
+			"Great Person - [Culture]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Research Unit",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can hurry technology research",
+			"Can instantly construct a [Field lab] improvement <by consuming this unit>",
+			"Empire enters a [8]-turn Golden Age <for [City-State] Civilizations> <by consuming this unit> <hidden from users>",
+			"Great Person - [Science]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Memory Unit",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+			"Empire enters a [8]-turn Golden Age <for [City-State] Civilizations> <by consuming this unit> <hidden from users>",
+			"Can instantly construct a [Cloud drive] improvement <by consuming this unit>",
+			"Great Person - [Gold]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Negotiations Unit",
+		"uniqueTo": "SinoStar",
+		"replaces": "Memory Unit",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [60] Influence",
+			"Empire enters a [8]-turn Golden Age <for [City-State] Civilizations> <by consuming this unit> <hidden from users>",
+			"May enter foreign tiles without open borders",
+			"Can instantly construct a [Cloud drive] improvement <by consuming this unit>",
+			"Great Person - [Gold]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 3
+	},
+	{
+		"name": "Construction Unit",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can speed up construction of a building",
+			"Can instantly construct a [Machine shop] improvement <by consuming this unit>",
+			"Empire enters a [8]-turn Golden Age <for [City-State] Civilizations> <by consuming this unit> <hidden from users>",
+			"Great Person - [Production]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Tactical Unit",
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"[+15]% Strength bonus for [Military] units within [2] tiles",
+			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Can be earned through combat",
+			"Great Person - [War]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 4
+	},
+	{
+		"name": "Command and Control Unit",
+		"uniqueTo": "Waltham Dynamics",
+		"replaces": "Tactical Unit",
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"[+15]% Strength bonus for [Military] units within [2] tiles",
+			"All adjacent units heal [+15] HP when healing",
+			"[+15] HP when healing",
+			"[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
+			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Can be earned through combat",
+			"Great Person - [War]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 4
+	}
+	*/
+	{
+		"name": "Great Prophet",
+		"unitType": "Civilian",
+		"uniques": [
+            //"Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+			"Removes other religions when spreading religion",
+            "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+            "Is part of Great Person group [Prophet]",
+            //"[This Unit] gets a name from the [Prophet] group",
+			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
+			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+			"Takes your religion over the one in their birth city"],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+
+	{
+		"name": "Tripod",
+		"unitType": "Armored",
+		"strength": 10,
+		"uniques": [
+			"Unbuildable",
+			"Cannot be purchased",
+			"Will not be displayed in Civilopedia"
+		]
+	}
+]

@@ -1,0 +1,44 @@
+[
+    /*{
+        "name": "Scientific",
+        "victoryScreenHeader": "Build the Hades Project and all core miner parts to win!",
+        "milestones": ["Build [Hades Project]", "Add all [core miner parts] in capital"],
+        "requiredSpaceshipParts": [
+            "Alcubierre Drive",
+            "Autonomous Control Unit",
+            "Thermal Sheathing",
+            "Laser Drill"
+        ],
+        "victoryString": "You have achieved victory through mastery of science! Your technical prowess has allowed you to tap into the lowest depths of Io's core and send its wealth back to Earth at faster-than-light speeds. Profits shall come into your company as never before!",
+        "defeatString": "You have been defeated. Your competitors have overwhelmed you and seized the wealth of Io. But don't fret. There are other moons and planets out there, ready to be mined and developed. You may yet strike it rich!"
+    },*/
+    {
+        "name": "Domination",
+        "victoryScreenHeader": "Destroy all enemies to win!",
+        "milestones": ["Destroy all players"],
+        "victoryString": "You have achieved victory through battle!",
+        "defeatString": "You have been defeated."
+    },
+    /*{
+        "name": "Diplomatic",
+        "victoryScreenHeader": "Establish IoNet and be voted world leader to win!",
+        "milestones": ["Anyone should build [IoNet]", "Win diplomatic vote"],
+        "victoryString": "You have triumphed over your foes through the art of diplomacy! Through negotiation and alliances, you have secured peace and prosperity for all companies on Io - with the lion's share of prosperity going to you, of course. Your statesmanship will stand as an example to all other companies for generations!",
+        "defeatString": "You have been defeated. Your competitors have overwhelmed you and seized the wealth of Io. But don't fret. There are other moons and planets out there, ready to be mined and developed. You may yet strike it rich!"
+    },*/
+    {
+        "name": "Religious",
+        "hiddenInVictoryScreen": false,
+		"victoryScreenHeader": "Become the dominant religion\nin every city on the moon to win!",
+        "milestones": ["Become the world religion"],
+        "victoryString": "You have achieved victory through the power of faith and conviction. All the nations have submitted to your teachings, for better or worse. Rejoice! For your faith has converted the world.",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Time",
+        "victoryScreenHeader": "Make progress to win!",
+        "milestones": ["Have highest score after max turns"],
+        "victoryString": "After years of toil and strife, you have staked out the largest claim on Io! Your power and wealth are the envy of all other companies. Enjoy your enormous profits, and prepare to reach out to other moons to extend your corporate empire!",
+        "defeatString": "You have been defeated. Your competitors have overwhelmed you and seized the wealth of Io. But don't fret. There are other moons and planets out there, ready to be mined and developed. You may yet strike it rich!"
+    }
+]

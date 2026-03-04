@@ -1,0 +1,19 @@
+{
+    "isBaseRuleset": true,
+    "uniques": [
+        "Can trade civilization introductions for [100] Gold",
+        "Allow City States to spawn with additional units"
+    ],
+    "constants":{
+        "religionLimitBase": 0,
+        "religionLimitMultiplier": 1,
+        "maxXPfromBarbarians":60,
+        "minimalCityDistance":3,
+        "minimalCityDistanceOnDifferentContinents":3,
+        "cityWorkRange":3,
+        "cityExpandRange": 4,
+        "maxSpyRank":5
+    },
+    "tileset": "FantasyHex",
+    "unitset": "FantasyHex"
+}
