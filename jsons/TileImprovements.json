@@ -1,6 +1,6 @@
 [	
 	{
-		"name": "Solar panels",
+		"name": "Solar farm",
 		"terrainsCanBeBuiltOn": ["Silicate", "Basalt", "Highlands", "Maria", "Hydrated rock"],
 		"production": 1,
 		"turnsToBuild": 5,
@@ -12,12 +12,24 @@
 		]
 	},
 	{
-		"name": "Mine",
-		"terrainsCanBeBuiltOn": ["Hill"],
-		//"techRequired": "Ore Mining",
+		"name": "Habitat",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"food": 2,
 		"production": 1,
+		"turnsToBuild": 6,
+		"shortcutKey": "H",
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Consumes [1] [Oxygen]",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		]
+	},
+	{
+		"name": "Mine",
+		//"techRequired": "Ore Mining",
 		"turnsToBuild": 7,
 		"uniques": [
+			"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 			//"[+1 Production] <after discovering [Planetary Engineering]>"
 		],
@@ -198,7 +210,7 @@
 		"shortcutKey": "X",
 		"civilopediaText": [
 			{
-				"text": "Provides a one-time Production bonus depending on distance to the closest factory once finished."
+				"text": "Provides a one-time Production bonus depending on distance to the closest city once finished."
 			}
 		]
 	},
@@ -210,9 +222,15 @@
 		"shortcutKey": "X",
 		"civilopediaText": [
 			{
-				"text": "Provides a one-time Production bonus depending on distance to the closest factory once finished."
+				"text": "Provides a one-time Production bonus depending on distance to the closest city once finished."
 			}
 		]
+	},
+	{
+		"name": "Remove Crater",
+		"turnsToBuild": 4,
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X"
 	},
 	{
 		"name": "Remove Fallout",
@@ -390,7 +408,14 @@
 	{
 		"name": "Crash site",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable"]
+		"uniques": [
+			"Unpillagable",
+			"Provides a random bonus when entered",
+			"Unbuildable",
+			"Does not need removal of [Rubble]",
+			"Does not need removal of [Regolith]",
+			"Does not need removal of [Crater]"
+		]
 	},
 	{
 		"name": "City ruins",
@@ -419,7 +444,7 @@
 			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
 			"Excluded from map editor",
 			"Provides [2] [Power]",
-			"Improves [any] resource in this tile"
+			"Provides [1] [Oxygen]"
 		],
 		"civilopediaText": [
 			{

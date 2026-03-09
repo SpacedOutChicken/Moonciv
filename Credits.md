@@ -1,21 +1,41 @@
 Starting from the beginning:
 
-Barbarians (Pirates): https://thenounproject.com/icon/skull-and-crossbones-12740/
+# Pixel art
+
+## From OpenGameArt.org:
+
+* Apollo 11 Site: based on [Apollo Moon Landing Sprites](https://opengameart.org/content/apollo-moon-landing-sprites) by Dizzy Crow
 
 # Icon art
 
 ## From the Noun Project:
 
+Improvements:
+* Crash site: based on [Air Crash](https://thenounproject.com/icon/air-crash-7273918/) by Yayat
+* Habitat: [House](https://thenounproject.com/icon/house-8188863/) by Rockicon
+
 Nations:
 * Barbarians (Pirates): [Skull and Crossbones](https://thenounproject.com/icon/skull-and-crossbones-12740/) by Andrea Torres Morales
 * City-state: [Corporation](https://thenounproject.com/icon/corporation-11034/) by Stephen Copinger
+* Brazil: based on [Brazil](https://thenounproject.com/icon/brazil-4856186/) by Ashwin Vgl
+* Canada: [Canada](https://thenounproject.com/icon/canada-7766392/) by Michael Appleford
 * China: [chinese symbol](https://thenounproject.com/icon/chinese-symbol-4114717/) by nakals
+* European Union: [european union](https://thenounproject.com/icon/european-union-54446/) by Ken
 * Soviet Union: [Communism](https://thenounproject.com/icon/communism-4235971/) by Adrien Coquet
+* United Kingdom: [Union Jack](https://thenounproject.com/icon/union-jack-760041/) by Alexander Skowalsky
 
 Policies:
 * Food for All: [Green earth](https://thenounproject.com/icon/green-earth-7953652/) by Nur Achmadi Yusuf
 
+Stats:
+* Gold (Marks): [manat](https://thenounproject.com/icon/manat-4946173/) by Rizsign
+
 ## From Wikimedia:
+
+Nations:
+* India: based on [Flag of India.svg](https://en.wikipedia.org/wiki/File:Flag_of_India.svg)
+* Japan: [Gosichigirimon.svg](https://en.wikipedia.org/wiki/Paulownia_crest)
+
 
 Preview image based on [Lawrie Cate - Moon (by).jpg](https://commons.wikimedia.org/wiki/File:Lawrie_Cate_-_Moon_(by).jpg)
 

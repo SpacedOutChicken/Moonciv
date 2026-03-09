@@ -4,11 +4,23 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"requiredTech": "Basic Survival",
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
+			"Unbuildable",
+			"Cannot be purchased"
+		]
+	},
+	{
+		"name": "Landing Shuttle",
+		"unitType": "Civilian",
+		"movement": 2,
+		"requiredTech": "Basic Survival",
 		"cost": 100,
 		"uniques": [
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
-			"Requires at least [2] population"
+			"Requires at least [2] population",
+			"May Paradrop to [Terrain] tiles up to [40] tiles away <in [Friendly] tiles>"
 		],
 		"hurryCostModifier": 20
 	},
@@ -1022,6 +1034,30 @@
 	}
 	*/
 	{
+		"name": "Great Engineer",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can speed up construction of a building",
+			// build improvement
+			//"[This Unit] gets a name from the [Engineer] group",
+			//"Is part of Great Person group [Great Person]",
+			"Great Person - [Production]",
+			"Unbuildable", "Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",
+		"unitType": "Civilian",
+		"uniques": [
+            "Can hurry technology research",
+            //"Can instantly construct a [Academy] improvement <by consuming this unit>",
+            //"Is part of Great Person group [Great Person]",
+            //"[This Unit] gets a name from the [Scientist] group",
+            "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
 		"name": "Great Prophet",
 		"unitType": "Civilian",
 		"uniques": [
@@ -1033,7 +1069,7 @@
             "Is part of Great Person group [Prophet]",
             //"[This Unit] gets a name from the [Prophet] group",
 			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
-			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+			"Unbuildable", "Uncapturable", "Religious Unit", "Only available <when religion is enabled>",
 			"Takes your religion over the one in their birth city"],
 		"movement": 2,
 		"religiousStrength": 1000

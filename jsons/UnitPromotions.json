@@ -303,6 +303,12 @@
 			"Can pass through impassable tiles"
 		]
 	},
+	{
+		"name": "Recycle Human",
+		"uniques": [
+			"[+1] population in a random city <by consuming this unit>"
+		]
+	},
 	/*{
 		"name": "Organic",
 		"uniques": [
@@ -358,6 +364,15 @@
 		"name": "Rogue Handicap",
 		"uniques": [
 			"Unable to pillage tiles"
+		]
+	},
+
+	// granted by terrain
+	{
+		"name": "Patriotism",
+		"uniques": [
+			"[+10]% Strength",
+			"[+5] HP when healing"
 		]
 	},
 

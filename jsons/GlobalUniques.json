@@ -8,6 +8,9 @@
         "Cannot build [Lander] units <when below [-10] [Happiness]>",
         "Rebel units may spawn <when below [-20] [Happiness]>",
 
+        // prevent units from sitting on mountains forever
+        "Can only heal by pillaging <in [Mountain] tiles>",
+
         "Notified of new Barbarian encampments",
         "Roads connect tiles across rivers",
 
@@ -136,7 +139,6 @@
         // something something unit supply
     ],
     "unitUniques": [
-        "Can only heal by pillaging <in [Mountain] tiles>"
         /*"Eliminates combat penalty for attacking across a coast <hidden from users>",
         "Cannot embark",
         "Can only heal by pillaging <in [Lava] tiles>",

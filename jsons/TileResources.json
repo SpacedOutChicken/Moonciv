@@ -136,8 +136,11 @@
 		"improvedBy": ["Quarry"],
 		"improvementStats": {"production": 1},
 		"uniques": [
-			"Generated on every [27] tiles <in [Fresh Water] tiles> <in tiles without [Hill]>",
-			"Generated on every [20] tiles <in [Fresh Water] tiles> <in tiles without [Hill]> <in [Hill] Regions>"
+			"Generated on every [47] tiles <in [Highlands] tiles> <in tiles without [Hill]>",
+			"Generated on every [47] tiles <in [Basalt] tiles> <in tiles without [Hill]>",
+			"Generated on every [47] tiles <in [Silicate] tiles> <in tiles without [Hill]>",
+			"Generated on every [47] tiles <in [Maria] tiles> <in tiles without [Hill]>",
+			"Generated on every [47] tiles <in [Hydrated rock] tiles> <in tiles without [Hill]>"
 		],
 		"civilopediaText": [
 			{
@@ -152,6 +155,31 @@
 			}
 		]
 	},
+	{
+		"name": "Xenoliths",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Regolith","Rubble","Hill"],
+		"production": 1,
+		"improvement": "Mine",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+			"Generated on every [14] tiles <in [Regolith] tiles>",
+			"Generated on every [16] tiles <in [Regolith] tiles> <in [Hill] Regions>",
+			"Generated on every [16] tiles <in [Rubble] tiles> <in [Hill] Regions>"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/Xenoliths",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "These out-of-place minerals frequently display properties not found in the rocks they're embedded in."
+			}
+		]
+	},
 	// luxury resources
 	{
 		"name": "Calcium",
@@ -159,11 +187,11 @@
 		"terrainsCanBeFoundOn": ["Highlands", "Maria"],
 		"food": 1,
 		"improvement": "Quarry",
-		"improvementStats": { "production": 1 },
+		"improvementStats": { "food": 1 },
 		"uniques": [
 			"Generated near City States with weight [20]",
 			"Generated with weight [30] <in [Maria] Regions> <in tiles without [Hill]>",
-			"Generated with weight [45] <in [Basalt] Regions> <in tiles without [Hill]>"
+			"Generated with weight [45] <in [Highlands] Regions> <in tiles without [Hill]>"
 		],
 		"civilopediaText": [
 			{
@@ -174,7 +202,7 @@
 				"Separator": true
 			},
 			{
-				"text": "A good material for steelmaking and hydrogen storage, with some applications in food and medicine for any humans who visit."
+				"text": "A good material for steelmaking and hydrogen storage, with some applications in food and medicine."
 			}
 		]
 	},
@@ -184,7 +212,7 @@
 		"terrainsCanBeFoundOn": ["Rubble","Maria"],
 		"food": 1,
 		"improvement": "Mine",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"food": 1},
 		"uniques": [
 			"Generated with weight [25] <in [Maria] Regions> <in tiles without [Hill]>",
 			"Generated with weight [15] <in [Rubble] Regions> <in tiles without [Hill]>",
@@ -208,7 +236,7 @@
 		"name": "Rare Earths",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Basalt","Highlands","Hill","Rubble","Regolith"],
-		"production": 1,
+		"gold": 1,
 		"improvement": "Mine",
 		"improvementStats": {"gold": 1},
 		"uniques": ["Generated with weight [25] <in [Highlands] Regions>",
@@ -235,7 +263,7 @@
 		"name": "Platinides",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill","Rubble","Regolith","Maria","Silicate"],
-		"production": 1,
+		"gold": 1,
 		"improvement": "Mine",
 		"improvementStats": {"gold": 1},
 		"uniques": ["Generated with weight [25] <in [Maria] Regions>",
@@ -246,7 +274,6 @@
 					"Doesn't generate naturally <in [Rubble] tiles> <in tiles without [Hill]>",
 					"Doesn't generate naturally <in [Regolith] tiles> <in tiles without [Hill]>",
 					"Doesn't generate naturally <in [{Maria} {Hill}] tiles>",
-					"Doesn't generate naturally <in [{Silicate} {Fresh Water}] tiles>",
 					"Doesn't generate naturally <in [{Silicate} {Hill}] tiles>"
 		],
 		"civilopediaText": [
@@ -266,7 +293,7 @@
 		"name": "Silicon",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill","Rubble","Regolith","Silicate","Maria"],
-		"production": 1,
+		"gold": 1,
 		"improvement": "Mine",
 		"improvementStats": {"gold": 1},
 		"uniques": ["Generated with weight [15] <in [Maria] Regions>",
@@ -291,37 +318,10 @@
 		]
 	},
 	{
-		"name": "Xenoliths",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Regolith","Rubble","Hill"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"gold": 1},
-		"uniques": ["Generated with weight [5] <in [Maria] Regions>",
-					"Generated with weight [20] <in [Regolith] Regions>",
-					"Generated with weight [15] <in [Hill] Regions>",
-					"Generated with weight [5] <in [Silicate] Regions>",
-					"Generated with weight [5] <in [Hybrid] Regions>",
-					"Generated near City States with weight [10]",
-					"Doesn't generate naturally <in [Rubble] tiles> <in tiles without [Hill]>"],
-		"civilopediaText": [
-			{
-				"extraImage": "TileSets/FantasyHex/Tiles/Xenoliths",
-				"imageSize": 64
-			},
-			{
-				"Separator": true
-			},
-			{
-				"text": "These out-of-place minerals frequently display properties not found in the rocks they're embedded in."
-			}
-		]
-	},
-	{
-        "name": "Obsidian",
+        "name": "Lithium",
         "resourceType": "Luxury",
         "terrainsCanBeFoundOn": ["Maria","Highlands","Basalt","Silicate","Regolith","Rubble"],
-        "production": 1,
+        "gold": 1,
         "improvement": "Quarry",
         "improvementStats": {"gold": 1},
         "uniques": [
@@ -331,25 +331,13 @@
             "Generated with weight [30] <in [Basalt] Regions>",
             "Generated with weight [30] <in [Hybrid] Regions>",
             "Generated near City States with weight [5]"
-        ],
-		"civilopediaText": [
-			{
-				"extraImage": "TileSets/FantasyHex/Tiles/Obsidian",
-				"imageSize": 64
-			},
-			{
-				"Separator": true
-			},
-			{
-				"text": "Tools made from this volcanic glass can form almost perfectly sharp edges."
-			}
-		]
+        ]
     },
 	{
 		"name": "Phosphorus",
 		"resourceType": "Luxury",
         "terrainsCanBeFoundOn": ["Highlands","Basalt","Silicate","Regolith","Rubble"],
-        "production": 1,
+        "gold": 1,
         "improvement": "Quarry",
         "improvementStats": {"gold": 1},
         "uniques": [
@@ -376,7 +364,7 @@
 		"name": "Manganese",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Highlands","Maria","Hydrated rock","Regolith","Rubble","Hill"],
-		"production": 1,
+		"gold": 1,
 		"improvement": "Mine",
 		"improvementStats": {"gold": 1},
 		"uniques": [
@@ -397,6 +385,122 @@
 			},
 			{
 				"text": "Once oxidized, this substance is useful in making glass, ceramics, and batteries."
+			}
+		]
+	},
+	{
+		"name": "Potassium",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Highlands","Maria","Hydrated rock","Basalt","Silicate","Regolith","Rubble","Hill"],
+		"gold": 1,
+		"improvement": "Mine",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+			"Generated with weight [10] <in [Regolith] Regions>",
+			"Generated with weight [10] <in [Highlands] Regions>",
+			"Generated with weight [20] <in [Basalt] Regions>",
+			"Generated with weight [15] <in [Silicate] Regions>",
+			"Generated with weight [10] <in [Maria] Regions>",
+			"Generated with weight [5] <in [Hill] Regions>",
+			"Generated with weight [15] <in [Hybrid] Regions>",
+			"Generated near City States with weight [10]"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/Potassium",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "An important component of industrial cleaners, this stuff also makes good fertilizer."
+			}
+		]
+	},
+	{
+		"name": "Titanium",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Highlands","Maria","Hydrated rock","Basalt","Silicate","Regolith","Rubble","Hill"],
+		"gold": 1,
+		//"revealedBy": "Geophysics",
+		"improvement": "Mine",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+			"Generated with weight [10] <in [Regolith] Regions>",
+			"Generated with weight [10] <in [Highlands] Regions>",
+			"Generated with weight [20] <in [Basalt] Regions>",
+			"Generated with weight [15] <in [Silicate] Regions>",
+			"Generated with weight [10] <in [Maria] Regions>",
+			"Generated with weight [5] <in [Hill] Regions>",
+			"Generated with weight [15] <in [Hybrid] Regions>",
+			"Generated near City States with weight [20]"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/Titanium",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "A valuable material for making light, strong, corrosion-resistant alloys."
+			}
+		]
+	},
+	{
+		"name": "Magnesium",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Maria","Highlands","Basalt","Silicate","Regolith","Rubble"],
+		"gold": 1,
+		//"revealedBy": "Geophysics",
+		"improvement": "Mine",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+			"Generated with weight [10] <in [Maria] Regions>",
+            "Generated with weight [40] <in [Regolith] Regions>",
+            "Generated with weight [10] <in [Highlands] Regions>",
+            "Generated with weight [30] <in [Basalt] Regions>",
+            "Generated with weight [30] <in [Hybrid] Regions>",
+            "Generated near City States with weight [5]"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/Magnesium",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "In addition to making for good alloys, this stuff also reacts powerfully with oxygen to make bright flares."
+			}
+		]
+	},
+	{
+		"name": "Halides",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Highlands", "Maria"],
+		//"revealedBy": "Geophysics",
+		"gold": 1,
+		"improvement": "Mine",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+			"Generated near City States with weight [20]",
+			"Generated with weight [30] <in [Maria] Regions> <in tiles without [Hill]>",
+			"Generated with weight [45] <in [Highlands] Regions> <in tiles without [Hill]>"
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/Halides",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "Very useful for making discharge lamps and photographic films."
 			}
 		]
 	},
@@ -423,7 +527,7 @@
 		],
 		"civilopediaText": [
 			{
-				"text": "This versatile stuff can be used for just about anything, and since there aren't any humans around, we don't have to worry about making it non-toxic."
+				"text": "This versatile stuff can be used for just about anything."
 			}
 		]
 	},
@@ -454,39 +558,28 @@
 			}
 		]
 	},
-	/*{
-		"name": "Carbon",
+	{
+		"name": "Hydroxides",
 		"resourceType": "Strategic",
-		"terrainsCanBeFoundOn": ["Silicate","Basalt","Hill","Regolith","Rubble"],
-		"food": 2,
+		"terrainsCanBeFoundOn": ["Maria","Hydrated rock","Hill","Regolith","Rubble","Crater"],
+		"food": 1,
 		"improvement": "Quarry",
-		"improvementStats": {"food": 2},
-		"uniques": ["Generated with weight [35] <in [Hill] tiles>",
-					"Generated with weight [30] <in [Regolith] tiles> <in tiles without [Hill]>",
-					"Generated with weight [30] <in [Rubble] tiles> <in tiles without [Hill]>",
-					"Minor deposits generated with weight [10] <in [Regolith] tiles>",
-					"Minor deposits generated with weight [10] <in [Rubble] tiles>",
-					"Minor deposits generated with weight [20] <in [{Silicate} {Hill}] tiles>",
-					"Minor deposits generated with weight [20] <in [{Basalt} {Hill}] tiles>",
-					"Minor deposits generated with weight [30] <in [{Highlands} {Hill}] tiles>",
-					"Minor deposits generated with weight [30] <in [{Maria} {Hill}] tiles>",
-					"Minor deposits generated with weight [30] <in [{Hydrated rock} {Hill}] tiles>",
-					"Guaranteed with Strategic Balance resource option"],
+		"improvementStats": {"food": 1},
+		"uniques": [
+			"Generated with weight [35] <in [{Featureless} {Hydrated rock}] tiles>",
+			"Generated with weight [35] <in [{Featureless} {Maria}] tiles>",
+			"Generated with weight [30] <in [{Maria} {Regolith}] tiles> <in tiles without [Hill]>",
+			"Generated with weight [30] <in [{Maria} {Rubble}] tiles> <in tiles without [Hill]>",
+			"Generated with weight [30] <in [{Hydrated rock} {Regolith}] tiles> <in tiles without [Hill]>",
+			"Generated with weight [30] <in [{Hydrated rock} {Rubble}] tiles> <in tiles without [Hill]>",
+			"Generated with weight [65] <in [Crater] tiles> <in tiles without [Hill]>",
+			"Minor deposits generated with weight [30] <in [{Maria} {Hill}] tiles>",
+			"Minor deposits generated with weight [30] <in [{Hydrated rock} {Hill}] tiles>",
+			"Guaranteed with Strategic Balance resource option"
+		],
 		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 5},
-		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3},
-		"civilopediaText": [
-			{
-				"extraImage": "TileSets/FantasyHex/Tiles/Carbon",
-				"imageSize": 64
-			},
-			{
-				"Separator": true
-			},
-			{
-				"text": "Perhaps the most 'friendly' of all elements, this stuff can be made into circuits, lubricants, abrasives, and even some of the hardest materials ever manufactured."
-			}
-		]
-	},*/
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
 	{
 		"name": "Oxygen",
 		"resourceType": "Strategic",
@@ -503,7 +596,7 @@
 					"Minor deposits generated with weight [10] <in [Regolith] tiles>",
 					"Minor deposits generated with weight [20] <in [Rubble] tiles>",
 					"Minor deposits generated with weight [20] <in [Hill] tiles> <in tiles without [Rubble]>",
-					"Minor deposits generated with weight [30] <in [{Featureless} {Silicate}] tiles> <in tiles without [Fresh Water]>",
+					"Minor deposits generated with weight [30] <in [{Featureless} {Silicate}] tiles>",
 					"Minor deposits generated with weight [20] <in [{Featureless} {Basalt}] tiles>",
 					"Minor deposits generated with weight [10] <in [{Featureless} {Highlands}] tiles>",
 					"Minor deposits generated with weight [10] <in [{Featureless} {Maria}] tiles>",
@@ -523,7 +616,7 @@
 			}
 		]
 	},
-	/*{
+	{
 		"name": "Aluminum",
 		"resourceType": "Strategic",
 		"revealedBy": "Ore Mining",
@@ -586,15 +679,38 @@
 	{
 		"name": "Helium-3",
 		"resourceType": "Strategic",
-		"revealedBy": "Jovian Extraction",
+		//"revealedBy": "Jovian Extraction",
+		"terrainsCanBeFoundOn": ["Maria","Basalt","Silicate","Highlands","Hydrated rock","Hill","Rubble","Regolith"],
 		"production": 2,
+		"improvement": "Mine",
+		"improvementStats": {"production": 2},
 		"uniques": [
-			"Doesn't generate naturally",
-			"Excluded from map editor"
+			"Guaranteed with Strategic Balance resource option",
+			"Generated with weight [35] <in [{Featureless} {Maria}] tiles>",
+			"Generated with weight [15] <in [{Featureless} {Basalt}] tiles>",
+			"Generated with weight [25] <in [{Featureless} {Highlands}] tiles>",
+			"Generated with weight [16] <in [Hill] tiles>",
+			"Minor deposits generated with weight [5] <in [Regolith] tiles>",
+			"Minor deposits generated with weight [10] <in [Rubble] tiles>",
+			"Minor deposits generated with weight [10] <in [Hill] tiles> <in tiles without [Rubble]>",
+			"Minor deposits generated with weight [20] <in [{Featureless} {Silicate}] tiles>",
+			"Minor deposits generated with weight [10] <in [{Featureless} {Basalt}] tiles>",
+			"Minor deposits generated with weight [5] <in [{Featureless} {Highlands}] tiles>",
+			"Minor deposits generated with weight [5] <in [{Featureless} {Maria}] tiles>",
+			"Minor deposits generated with weight [5] <in [{Featureless} {Hydrated rock}] tiles>"
 		],
+		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 5},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3},
 		"civilopediaText": [
 			{
-				"text": "Extracted from nearby Jupiter, this isotope makes excellent fuel for nuclear fusion."
+				"extraImage": "TileSets/FantasyHex/Tiles/Helium-3",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{
+				"text": "This isotope makes excellent fuel for nuclear fusion."
 			}
 		]
 	},
@@ -636,7 +752,7 @@
 				"text": "When these particles react with normal matter, they release pure energy, making them excellent sources of fuel as well as ammunition for weapons of mass destruction."
 			}
 		]
-	},*/
+	},
 
 	// singularity related
 	{

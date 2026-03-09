@@ -54,10 +54,10 @@
 		"hateHello": "What do you need?!",
 		"tradeRequest": "How would you like it if I propose this kind of exchange?",
 		"outerColor": [84,26,26],
-		"innerColor": [255,168,168],
+		"innerColor": [244,232,54],
 
 		"uniqueName": "Siberian Riches",
-		"uniques": ["[+10]% Production when constructing [Lander] units [in all cities]"],
+		"uniques": ["[+10]% Production when constructing [Landing Shuttle] units [in all cities]"],
 		"cities": ["Moscow","St. Petersburg","Novgorod","Rostov","Yaroslavl","Yekaterinburg","Yakutsk","Vladivostok","Smolensk","Orenburg",
 			"Krasnoyarsk","Khabarovsk","Bryansk","Tver","Novosibirsk","Magadan","Murmansk","Irkutsk","Chita","Samara",
 			"Arkhangelsk","Chelyabinsk","Tobolsk","Vologda","Omsk","Astrakhan","Kursk","Saratov","Tula","Vladimir","Perm",
@@ -93,6 +93,217 @@
 			"Yichang","Yingtian","Xinyu","Xinzheng","Handan","Dunhuang","Gaoyu","Nantong","Weifang","Xikang"],
         "spyNames": ["Li", "Chen", "Zhang", "Liu", "Yang", "Huang", "Zhao", "Wu", "Zhou", "Sun"]
 
+    },
+	{
+		"name": "Japan",
+		"leaderName": "Oda Nobunaga",
+		"adjective": ["Japanese"],
+		//"preferredVictoryType": "Domination",
+		//"personality": "Oda Nobunaga",
+
+        "startIntroPart1": "Lord Oda Nobunaga, ruler of Japan, the land of the Rising Sun is at your command! Through history, Japanese people lived and died with honor, proud of their rich culture of arts and letters. Years of bloody civil wars, invasions of foreign powers, wealth but also great poverty, have never altered the strong will of the Rising Sun island, as the Bushido spirit has imbued the fields of battle and the Japanese society for millenia. At the end of the 19th century, under foreign influence, your people took the path of modernity, and in a few decades, made of Japan a land of technological innovation and powerful industry, with which only few nations can compete.",
+        "startIntroPart2": "O great daimyo, will you take on your hands the Japan destiny, for the Rising Sun to light the world? Will your new empire shine through the ages of history?",
+
+        "declaringWar": "I hereby inform you of our intention to wipe out your civilization from this world.",
+		"attacked": "Pitiful fool! Now we shall destroy you!",
+		"defeated": "You were much wiser than I thought.",
+		"denounced": "Alright then. I trust you've thought it through.",
+		"introduction": "We hope for a fair and just relationship with you, who are renowned for military bravery.",
+		"neutralHello": "Hello.",
+		"hateHello": "Oh, it's you...",
+		"tradeRequest": "I would be grateful if you agreed on the following proposal.",
+		"outerColor": [255, 255, 255],
+		"innerColor": [184, 0, 0],
+		//"favoredReligion": "Shinto",
+		"uniqueName": "Bushido",
+		"uniques": ["[+15]% Production when constructing [All] buildings [in all cities]"],
+		"cities": ["Kyoto","Osaka","Tokyo","Satsuma","Kagoshima","Nara","Nagoya","Izumo","Nagasaki","Yokohama",
+			"Shimonoseki","Matsuyama","Sapporo","Hakodate","Ise","Toyama","Fukushima","Suo","Bizen","Echizen",
+			"Izumi","Omi","Echigo","Kozuke","Sado","Kobe","Nagano","Hiroshima","Takayama","Akita","Fukuoka","Aomori",
+			"Kamakura","Kochi","Naha","Sendai","Gifu","Yamaguchi","Ota","Tottori"],
+        "spyNames": ["Akaishi", "Oki", "Hattori", "Morozumi", "Momochi", "Kawashima", "Orin", "Sakanishi", "Kaede", "Mochizuki"]
+    },
+	{
+        "name": "Brazil",
+        "leaderName": "Pedro II",
+        "adjective": ["Brazilian"],
+        //"preferredVictoryType": "Cultural",
+        "startIntroPart1": "All Hail his most respected and magnanimous Emperor, Pedro II of Brazil. It was with great insight and unshakeable dignity that you ruled the Brazilian empire for over 50 years, ushering in a time of lasting peace and prosperity. Your reputation as a stern, but fair leader was never blemished by controversy, as your unwavering dedication to the people of Brazil provided hope and established the kingdom's position in South America. Your scholarly pursuits and staunch defense of freedom of speech led to the creation of several institutions of higher learning, strengthening Brazil's sense of national identity.",
+        "startIntroPart2": "Revered Emperor Pedro, your people long for a return to the peaceful days when you walked among them, hearing their stories and reassuring them of a bright future. Will you once again lead your kingdom to prosperity? Can you build a civilization that stands the test of time?",
+        "declaringWar": "Your reign will be better under MY domain.",
+        "attacked": "I worry about all those who are affected by this conflict.",
+        "defeated": "This is why I prefer diplomacy to violence...",
+        "introduction": "I am Pedro, Emperor of Brazil. I have little time for pleasantries, what brings you here?",
+        "neutralHello": "Hello.",
+        "hateHello": "What do you want?",
+        "tradeRequest": "Should we prosper through commerce?",
+        "outerColor": [107,208,6],
+        "innerColor": [63,106,64],
+        "uniqueName": "Carnival",
+        "uniques": [
+            "[+2 Food] [in all cities]",
+			"[+5]% growth [in all cities]"
+        ],
+        "cities": [
+            "Rio de Janeiro","Sao Paulo","Salvador","Brasilia","Fortaleza","Belo Horizonte","Manaus","Curitiba","Recife","Porto Alegre",
+            "Belém","Goiânia","Guarulhos","Campinas","São Luis","Maceió","Duque de Caxias","Natal","Campo Grande","Teresina",
+            "Florianópolis","Nova Iguaçu","Sao Bernardo do Campo","João Pessoa","Osasco","Jaboatão dos Guararapes","São José dos Campos","Contagem","Uberlândia","Aracaju",
+            "Cuiaba","Feira de Santana","Juiz de Fora","Joinville","Macapa"
+        ],
+        "spyNames": [
+            "Antonio","Bartolomeu","Domingos","Estevao","Fernao","Francisco","Pascoal","Salvador","Tome","Bianca"
+        ]
+    },
+	{
+        "name": "Canada", // Text chat added
+        "leaderName": "John A. MacDonald",
+        "adjective": ["Canadian"],
+
+        "startIntroPart1": "Greetings to John A. MacDonald, the first Prime Minister of Canada and father of Confederation. You united a vast and rugged land with railroads and resolve, crafting a peaceful dominion from coast to coast under the maple leaf's proud shade.",
+        "startIntroPart2": "Sir MacDonald, your nation calls once more. Will you lead with civility and strength, building a new era of peace and prosperity? Can you create a civilization that stands the test of time?",
+        "declaringWar": "Regretfully, you've forced my hand. Canada shall rise, even through conflict.",
+        "attacked": "This is not the path we wished, but Canada will endure. We always do.",
+        "defeated": "You may conquer our land, but never our quiet strength or spirit.",
+        "introduction": "Welcome to Canada. As their first Prime Minister, I give you my warmest welcome.",
+        "neutralHello": "Canada welcomes respectful dialogue. Our wilderness is vast, but our hearts are fair.",
+        "hateHello": "I hoped we could meet in peace, but your actions leave no room for kindness or trust.",
+        "tradeRequest": "There's no frontier too distant for fair trade. Let's build something enduring together.",
+        "outerColor": [228, 26, 40],
+        "innerColor": [245, 222, 153],
+        "uniqueName": "Canadian Fur Trade",
+        "uniques": [
+            "[+25]% Strength for cities"
+        ],
+        "cities": [
+            "Ottawa","Toronto","Montreal","Vancouver","Calgary","Edmonton","Quebec City","Winnipeg","Mississauga","Halifax",
+            "Saskatoon","Regina","Brampton","Hamilton","Fredericton","Laval","Surrey","Yellowknife","Whitehorse","Iqaluit",
+            "London","Victoria","Chilliwack","Markham","Windsor","Vaughan","Gatineau","Longueuil","St. John's","Burnaby",
+            "Kitchener","Richmond"
+        ],
+        "spyNames": [
+            "Cousin","Felix","Dennis","Edward","Prof. Rex","Eliza","Mary","Virginia","Scarlett","Barbara"
+        ]
+    },
+	{
+        "name": "India",
+        "leaderName": "Gandhi",
+        "adjective": ["Indian"],
+
+        "startIntroPart1": "Greetings, President Mahatma Gandhi, great souled leader of India! You are the ruler of one of the oldest countries in the world with history stretching back almost 10'000 years. A spiritual country, India is the birthplace of three of the world's great religions - Hinduism, Buddhism and Jainism. This is a passionate land of music and color, a land of great wealth and grinding poverty. For centuries, India was divided into kingdoms who fought constantly with each other and against outside invaders. That was, horever, after empires such as Maratha, Maurya and Gupta. In the 12th century AD, India was conquered by Muslim Turks fled from the Mongols. In the early 17th century, the English arrived, and thought a combination of shrewd diplomacy and technological supeiority, they conquered your fragmented nation. England remained in power for some two centuries until driven out by a rising wave of Indian nationalism, a peaceful rebellion unlike any before seen in history, one led by you!",
+        "startIntroPart2": "Gandhi, your people look to you to lead them to even greater heights of glory! Can you help your people realize their great potential, to once again become the world's center of arts, culture and religion? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "I have just received a report that large numbers of my troops have crossed your borders.",
+        "attacked": "My attempts to avoid violence have failed. An eye for an eye only makes the world blind.",
+        "defeated": "You can chain me, you can torture me, you can even destroy this body, but you will never imprison my mind.",
+        "introduction": "Hello, I am Mohandas Gandhi. My people call me Bapu, but please, call me friend.",
+        "neutralHello": "I wish you peace.",
+        "hateHello": "What do you want?",
+        "tradeRequest": "My friend, are you interested in this arrangement?",
+        "outerColor": [14,113,4],
+        "innerColor": [255,163,71],
+        "uniqueName": "Population Growth",
+        "uniques": [
+            "[+1] population [in this city] <upon founding a city>"
+        ],
+        "cities": [
+            "Delhi","Mumbai","Vijayanagara","Pataliputra","Varanasi","Agra","Calcutta","Lahore","Bangalore","Hyderabad",
+            "Madurai","Ahmedabad","Kolhapur","Prayaga","Ayodhya","Indraprastha","Mathura","Ujjain","Gulbarga","Jaunpur",
+            "Rajagriha","Sravasti","Tiruchirapalli","Thanjavur","Bodhgaya","Kushinagar","Amaravati","Gaur","Gwalior","Jaipur",
+            "Karachi"
+        ],
+        "spyNames": [
+            "Ashok","Shanx","Hormis","Sanjeev","Ananda","Rani","Parvati","Mukta","Karishma","Jyotsna"
+        ]
+    },
+	{
+        "name": "European Union",
+        "leaderName": "Gustavus Adolphus",
+        "adjective": ["European"],
+
+        "startIntroPart1": "All hail the transcendent King Gustavus Adolphus, founder of the Swedish Empire and her most distinguished military tactician. It was during your reign that Sweden emerged as one of the greatest powers in Europe, due in no small part to your wisdom, both on and off the battlefield. As king, you initiated a number of domestic reforms that ensured the economic stability and prosperity of your people. As the general who came to be known as the 'Lion of the North', your visionary designs in warfare gained the admiration of military commanders the world over. Thanks to your triumphs in the Thirty Years' War, you were assured a legacy as one of history's greatest generals.",
+        "startIntroPart2": "Oh noble King, the people long for your prudent leadership, hopeful that once again they will see your kingdom rise to glory. Will you devise daring new strategies, leading your armies to victory on the theater of war? Will you build a civilization that stands the test of time?",
+        "declaringWar": "The Hakkapeliittas will ride again and your men will fall just at the sight of my cavalry!",
+        "attacked": "Ha ha ha, captain Gars will be very glad to head out to war again.",
+        "defeated": "I am Sweden's king. You can take my lands, my people, my kingdom, but you will never reach the House of Vasa.",
+        "introduction": "Stranger, welcome to the Snow King's kingdom! I am Gustavus Adolphus, member of the esteemed House of Vasa.",
+        "neutralHello": "Oh, welcome!",
+        "hateHello": "Oh, it is you.",
+        "tradeRequest": "My friend, it is my belief that this settlement can benefit both our peoples.",
+        "outerColor": [39,59,146],
+        "innerColor": [250,250,27],
+        "uniqueName": "Nobel Prize",
+        "uniques": [
+            "Instantly gain [200] [Gold] <(modified by game speed)>",
+			"[+2 Gold] [in all cities]"
+        ],
+        "cities": [
+            "Stockholm","Sigtuna","Helsinki","Birka","Uppsala","Turku","Linköping","Lund","Espoo","Malmö",
+            "Vantaa","Visby","Strängnäs","Tampere","Skara","Lödöse","Oulu","Växjö","Jyväskylä","Gothenburg",
+            "Örebro","Lahti","Helsingborg","Jönköping","Kuopio","Norrköping","Sundsvall","Kouvola","Karlstad","Umeå",
+            "Pori","Ystad","Paviken","Vaasa"
+        ],
+        "spyNames": [
+            "Leif","Ingegard","Sören","Ragnhild","Lars","Lina","Herr Grå","Magnus","Vilma","Kusin"
+        ]
+    },
+	{
+        "name": "United Kingdom",
+        "leaderName": "Elizabeth",
+        "adjective": ["UK"],
+
+        "startIntroPart1": "Praises upon her serene highness, Queen Elizabeth Gloriana. You lead and protect the celebrated maritime nation of England. England is an ancient land, settled as early as 35,000 years ago. The island has seen countless waves of invaders, each in turn becoming a part of the fabric of the people. Although England is a small island, for many years your people dominated the world stage. Their matchless navy, brilliant artists and shrewd merchants, giving them power and influence far in excess of their mere numbers.",
+        "startIntroPart2": "Queen Elizabeth, will you bring about a new golden age for the English people? They look to you once more to return peace and prosperity to the nation. Will you take up the mantle of greatness? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "By the grace of God, your days are numbered.",
+        "attacked": "We shall never surrender.",
+        "defeated": "You have triumphed over us. The day is yours.",
+        "introduction": "We are pleased to meet you.",
+        "neutralHello": "Hello, again.",
+        "hateHello": "Oh, it's you!",
+        "tradeRequest": "Would you be interested in a trade agreement with England?",
+        "outerColor": [26,32,96],
+        "innerColor": [255,0,0],
+        "uniqueName": "Sun Never Sets",
+        "uniques": [
+            "[+2] Range <for [Air] units>",
+			"[+10]% Production when constructing [Air] units [in all cities]"
+        ],
+        "cities": [
+            "London","York","Nottingham","Hastings","Canterbury","Coventry","Warwick","Newcastle","Oxford","Liverpool",
+            "Dover","Brighton","Norwich","Leeds","Reading","Birmingham","Exeter","Cambridge","Gloucester","Manchester",
+            "Bristol","Leicester","Carlisle","Ipswich","Portsmouth","Berwick","Bath","Mumbles","Southampton","Sheffield",
+            "Salisbury","Colchester","Plymouth","Lancaster","Blackpool","Winchester","Hull"
+        ],
+        "spyNames": [
+            "James","Scarlett","Mycroft","Charlotte","Gwendolyn","Mr. Eks","Dr. Grey","Andrew","Scott","Anne"
+        ]
+    },
+	{
+        "name": "Saudi Arabia",
+        "leaderName": "Harun al-Rashid",
+        "adjective": ["Saudi"],
+
+        "startIntroPart1": "Blessings of God be upon you oh great caliph Harun al-Rashid, leader of the pious Arabian people! The Muslim empire, the Caliphate was born in the turbulent years after the death of the prophet Muhammad in 632 AD, as his followers sought to extend the rule of God to all of the people of the earth. The caliphate grew mighty indeed at the height of its power, ruling Spain, North Africa, the Middle East, Anatolia, the Balkans and Persia. An empire as great as or even greater than that of Rome. The arts and sciences flourished in Arabia during the Middle Ages, even as the countries of Europe descended into ignorance and chaos. The Caliphate survived for six hundred years, until finally succumbing to attack from the Mongols, those destroyers of Empires.",
+        "startIntroPart2": "Great Caliph Harun al Rashid, your people look to you to return them to greatness! To make Arabia once again an enlightened land of arts and knowledge, a powerful nation who needs fear no enemy! Oh Caliph, will you take up the challenge? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "The world will be more beautiful without you. Prepare for war.",
+        "attacked": "Fool! You will soon regret dearly! I swear it!",
+        "defeated": "You have won, congratulations. My palace is now in your possession, and I beg that you care well for the peacock.",
+        "introduction": "Welcome foreigner, I am Harun Al-Rashid, Caliph of the Arabs. Come and tell me about your empire.",
+        "neutralHello": "Peace be upon you.",
+        "hateHello": "Oh, it's you.",
+        "tradeRequest": "Come forth, let's do business.",
+        "outerColor": [ 41,83,42],
+        "innerColor": [146,221,9],
+        "uniqueName": "Trade Caravans",
+        "uniques": [
+            "[+1 Production, +1 Gold] from [Water] tiles [in all cities]"
+        ],
+        "cities": [
+            "Mecca","Medina","Damascus","Baghdad","Najran","Kufah","Basra","Khurasan","Anjar","Fustat",
+            "Aden","Yamama","Muscat","Mansura","Bukhara","Shiraz","Merw","Balkh","Mosul","Aydab",
+            "Bayt Ras","Suhar","Taif","Hama","Tabuk","Sana'a","Shihr","Tripoli","Tunis","Kairouan","Algiers","Oran"
+        ],
+        "spyNames": [
+            "Solhofaat","Khenzeer","Zarafah","Temsaah","Abyadh","Mostafa","Yusuf","Waddah","Sameera","Gamal"
+        ]
     },
 	/*
 	{

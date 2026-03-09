@@ -37,6 +37,9 @@
         "name": "Kelp Farm",
         "food": 2,
         "cost": 50,
+        "uniques": [
+            "Provides [1] [Oxygen]"
+        ],
         "maintenance": 1
     },
 
@@ -49,6 +52,16 @@
         "cost": 500,
         "uniques": [
             "Only available <after adopting [Postcapitalism Complete]>"
+        ]
+    },
+    {
+        "name": "Crystal Palace",
+        "isNationalWonder": true,
+        "culture": 1,
+        "happiness": 1,
+        "cost": 500,
+        "uniques": [
+            "Only available <after adopting [Hyperabsolutism Complete]>"
         ]
     },
 

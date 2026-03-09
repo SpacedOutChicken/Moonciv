@@ -14,6 +14,13 @@
         ]
     },
     {
+        "name": "Astronaut",
+        "movementType": "Land",
+        "uniques": [
+            "Cannot intercept [Space] units <for units without [ASAT]> <hidden from users>"
+        ]
+    },
+    {
         "name": "Melee Drone",
         "movementType": "Land",
         "uniques": [

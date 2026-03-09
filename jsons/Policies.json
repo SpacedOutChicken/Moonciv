@@ -73,6 +73,440 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Neoruralism",
+        "era": "Exploration era",
+        "uniques": [
+            "[+2 Food] from every [Kelp Farm]"
+        ],
+        "policies": [
+            {
+                "name": "Second Green Revolution",
+                "uniques": [
+                    "[+10]% [Food] [in all cities]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Multiculturalism",
+                "uniques": [
+                    "[-15]% Unhappiness from [Population] [in all cities]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Human Recycling",
+                "uniques": [
+                    "[Astronaut] units gain the [Recycle Human] promotion"
+                    //possibly triggering event
+                ],
+                "requires": ["Second Green Revolution"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Healthy Food",
+                "uniques": [
+                    "[-2 Happiness] [in capital]",
+                    "[+10]% growth [in all cities]"
+                ],
+                "requires": ["Multiculturalism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Tutti-Frutti",
+                "uniques": [
+                    "[-25]% Food consumption by [Population] [in all cities]",
+                    "[-2 Production] [in all cities]"
+                ],
+                "requires": ["Second Green Revolution", "Healthy Food"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Agrodefense",
+                "uniques": [
+                    "[-25]% Food consumption by [Population] [in all cities] <for [10] turns> <upon entering a war with [All] Civilizations>"
+                ],
+                "row": 3,
+                "column": 5
+            },
+            {
+                "name": "Neoruralism Complete",
+                "uniques": [
+                    "[+15]% growth [in all cities]",
+                    "Empire enters golden age"
+                ]
+            }
+        ]
+    },
+    {
+		"name": "Cyberfascism",
+		"era": "Exploration era",
+		"uniques": [],
+		"policies": [
+			{
+				"name": "Nationalism",
+				"uniques": [
+					"[+1 Happiness] [in capital]",
+					"[-5]% Unhappiness from [Population] [in all cities]"
+				],
+				"row": 1,
+				"column": 3
+			},
+            {
+                "name": "Eugenics",
+                "uniques": [
+                    "[-15]% Unhappiness from [Population] [in all cities]",
+                    "[+15]% City-State Influence degradation"
+                ],
+                "requires": ["Nationalism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Propaganda",
+                "uniques": [
+                    "[+1 Happiness] [in all cities]",
+                    "[+15] Strength <when fighting in [Friendly Land] tiles>"
+                ],
+                "requires": ["Nationalism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "State Control",
+                "uniques": [
+                    "[+25]% unhappiness from the number of cities",
+                    "[-25]% enemy spy effectiveness [in all cities]"
+                ],
+                "requires": ["Nationalism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Grey Coats",
+                "uniques": [
+                    "Comment [Adjust negative effects of Unhappiness]"
+                ],
+                "requires": ["Propaganda", "State Control"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "FTL Warfare",
+                "uniques": [
+                    "[+1] Movement <for [All] units>",
+                    "[+1] Range <for [Air] units>"
+                ],
+                "requires": ["Eugenics", "Grey Coats"],
+                "row": 4,
+                "column": 3
+            },
+			{
+				"name": "Cyberfascism Complete",
+				"uniques": [
+					"[+10]% Strength <for [{Military} {Land}] units>"
+				]
+			}
+		]
+	},
+    {
+        "name": "Anarchocapitalism",
+        "era": "Exploration era",
+        "uniques": [
+            "[+25]% [Gold] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Free Market",
+                "uniques": [
+                    "[+1 Gold] [in all cities]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Lunar Consumerism",
+                "uniques": [
+                    "[-10]% Unhappiness from [Population] [in all cities]",
+                    "[+2 Gold, -1 Food] [in all cities]",
+                    "Provides [-1] [Power] <for every [2] [Cities]>"
+                ],
+                "requires": ["Free Market"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Mercenaries",
+                "uniques": [
+                    "May buy [Mercenary] units with [Gold] for [2] times their normal Production cost"
+                ],
+                "requires": ["Free Market"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Corporate Espionage",
+                "uniques": [
+                    "[+15]% Production when constructing [All] buildings [in all cities]",
+                    "[+15]% enemy spy effectiveness [in all cities]"
+                ],
+                "requires": ["Lunar Consumerism"],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Cryptocurrency",
+                "uniques": [
+                    "[+2 Production, +1 Gold] [in all cities]",
+                    "[+2 Gold] [in all cities] <when number of [[Gold] Per Turn] is less than [100]>",
+                    "[+2 Gold] [in all cities] <when number of [[Gold] Per Turn] is less than [1000]>"
+                ],
+                "requires": ["Lunar Consumerism"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Debt Slaves",
+                "uniques": [
+                    "[-1 Happiness, +2 Production, +2 Gold] [in all cities]",
+                    "Can build [All] improvements at a [+25]% rate"
+                ],
+                "requires": ["Mercenaries"],
+                "row": 3,
+                "column": 5
+            },
+            {
+                "name": "Anarchocapitalism Complete",
+                "uniques": [
+                    "[-50]% maintenance costs"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Hyperabsolutism",
+        "era": "Exploration era",
+        "uniques": [
+            "[+1 Culture] [in all cities]"
+        ],
+        "policies": [
+            {
+                "name": "Loyal Army",
+                "uniques": [
+                    "No damage penalty for wounded units"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Neofeudalism",
+                "uniques": [
+                    "[+2 Food] [in all cities]",
+                    "[+10]% growth [in all cities]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Royal Genes",
+                "uniques": [
+                    "[+10]% City-State Influence degradation",
+                    "[+15]% Production when constructing [All] wonders [in all cities]"
+                ],
+                "requires": ["Loyal Army", "Neofeudalism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "The Moon King",
+                "uniques": [
+                    "[+1 Happiness] [in all cities]",
+                    "Empire enters golden age"
+                ],
+                "requires": ["Neofeudalism", "Royal Genes"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "Colonization",
+                "uniques": [
+                    "[+25]% Production when constructing [Landing Shuttle] units [in all cities]",
+                    "[Gold] cost of purchasing [Landing Shuttle] units [-25]%",
+                    "Free [Landing Shuttle] appears"
+                ],
+                "requires": ["Loyal Army", "The Moon King"],
+                "row": 4,
+                "column": 2
+            },
+            {
+                "name": "Pure Winds",
+                "uniques": [
+                    "Provides [-1] [Oxygen] <for every [2] [Cities]>"
+                    //"[+15]% Production when constructing [Biosphere] buildings [in all cities]"
+                ],
+                "requires": ["The Moon King"],
+                "row": 4,
+                "column": 4
+            },
+            {
+                "name": "Hyperabsolutism Complete",
+                "uniques": [
+                    "[+10]% Production when constructing [Crystal Palace] wonders [in all cities]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Neosocialism",
+        "era": "Exploration era",
+        "uniques": [
+            "Resting point for Influence with City-States is increased by [20]"
+        ],
+        "policies": [
+            {
+                "name": "Five-Year Plan",
+                "uniques": [
+                    "[+2 Production, +1 Food] [in all cities]",
+                    "[+1 Production] from every [Mine]",
+                    "[+1 Production] from every [Quarry]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Socialist Propaganda",
+                "uniques": [
+                    "[+1 Happiness] [in all cities]",
+                    "[+10]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
+                ],
+                "requires": ["Five-Year Plan"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Neo-Stalinism",
+                "uniques": [
+                    "[-2 Happiness] [in capital]",
+                    "[+1 Production] from every [Improvement]"
+                ],
+                "requires": ["Five-Year Plan"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Moon Brutalism",
+                "uniques": [
+                    "[+1 Happiness] [in capital]",
+                    "[+10]% Production when constructing [All] wonders [in all cities]"
+                ],
+                "requires": ["Socialist Propaganda"],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Government Control",
+                "uniques": [
+                    "[-1 Happiness] [in capital]",
+                    "[-25]% enemy spy effectiveness [in all cities]"
+                ],
+                "requires": ["Neo-Stalinism"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Secret Labs",
+                "uniques": [
+                    "[15]% [Science] [in all cities]",
+                    "[-25]% enemy spy effectiveness [in all cities]"
+                ],
+                "requires": ["Neo-Stalinism"],
+                "row": 3,
+                "column": 5
+            },
+            {
+                "name": "Neosocialism Complete",
+                "uniques": [
+                    "Free [Great Engineer] appears",
+                    "May buy [Great Engineer] units for [1000] [Gold] [in all cities] at an increasing price ([500])"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Technocracy",
+        "era": "Exploration era",
+        "uniques": [
+            "[+10]% [Science] <while the empire is happy>"
+        ],
+        "policies": [
+            {
+                "name": "Socratic Dialogue",
+                "uniques": [
+                    "[+2 Science] [in all cities]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Neopositivism",
+                "uniques": [
+                    "[-25]% [Faith] from City-States",
+                    "Allied City-States provide [Science] equal to [50]% of what they produce for themselves"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Moon Tech Expo",
+                "uniques": [
+                    "[+1 Gold] from all [Science] buildings"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Lunar Academy",
+                "uniques": [
+                    "[+2 Science, -1 Happiness] [in all cities]"
+                ],
+                "requires": ["Socratic Dialogue", "Neopositivism"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Freepedia",
+                "uniques": [
+                    "[-10]% Unhappiness from [Population] [in all cities]",
+                    "[+5]% [Science] <while the empire is happy>"
+                ],
+                "requires": ["Neopositivism", "Moon Tech Expo"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Pythagoras AI",
+                "uniques": [
+                    "Free Technology",
+                    "[+1 Science] per [3] population [in all cities]"
+                ],
+                "requires": ["Lunar Academy", "Freepedia"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Technocracy Complete",
+                "uniques": [
+                    "Free [Great Scientist] appears",
+                    "May buy [Great Scientist] units for [1000] [Gold] [in all cities] at an increasing price ([500])"
+                ]
+            }
+        ]
     }
     /*
     {

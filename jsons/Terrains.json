@@ -241,6 +241,32 @@
 			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
+	{
+        "name": "Crater",
+        "type": "TerrainFeature",
+        "movementCost": 2,
+        "unbuildable": true,
+        "defenceBonus": 0.25,
+        "occursOn": ["Maria","Basalt","Silicate","Highlands","Hydrated rock"],
+        "uniques": [
+            "Rough terrain",
+            "Rare feature",
+            "[-5] to Fertility for Map Generation",
+			"Blocks line-of-sight from tiles at same elevation"
+        ]
+    },
+	{
+        "name": "Lava tube",
+        "type": "TerrainFeature",
+        "movementCost": 1,
+        "defenceBonus": 0.25,
+        "occursOn": ["Maria","Basalt","Silicate","Highlands","Hydrated rock"],
+        "uniques": [
+            "Rare feature",
+            "[-5] to Fertility for Map Generation",
+			"[+5] Strength for cities built on this terrain"
+        ]
+    },
 
 	{
 		"name": "Fallout",
@@ -250,7 +276,7 @@
 		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
 		// For map editor only - the generator won't place it without code or enabling uniques
 		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
-		"occursOn": ["Silicate","Basalt","Highlands","Maria","Hydrated rock","Rubble","Regolith","Hill"],
+		"occursOn": ["Silicate","Basalt","Highlands","Maria","Hydrated rock","Rubble","Regolith","Hill","Crater","Lava tube"],
 		"defenceBonus": -0.15,
 		"civilopediaText": [
 			{
@@ -267,9 +293,41 @@
 		"gold": 1,
         "movementCost": 0,  // So Civilopedia won't display a cost of 1
         "uniques": ["Doesn't generate naturally", "Excluded from map editor"]
-    }
+    },
 
 	// Natural Wonders
+	{
+		"name": "Apollo 11 Site",
+		"type": "NaturalWonder",
+		"culture": 4,
+		"happiness": 2,
+		"occursOn": ["Maria"],
+		"uniques": [
+			"Tile provides yield without assigned population",
+			"Must be adjacent to [0] [Elevated] tiles",
+			"Grants [Patriotism] ([+10% Strength and +5 HP when healing]) to adjacent [non-[Air]] units for the rest of the game"
+		],
+		"turnsInto": "Maria",
+		"impassable": true,
+		"unbuildable": true,
+		"overrideStats": true,
+		"weight": 10
+	},
+	{
+		"name": "Mons Mouton",
+		"type": "NaturalWonder",
+		"production": 4,
+		"happiness": 1,
+		"occursOn": ["Mountain", "Highlands", "Basalt", "Silicate", "Maria", "Hydrated rock"],
+		"uniques": [
+			"Must be adjacent to [4] to [6] [Elevated] tiles",
+			"Must be adjacent to [0] to [2] [Mountain] tiles"
+		],
+		"turnsInto": "Mountain",
+		"impassable": true,
+		"unbuildable": true,
+		"weight": 10
+	}
 	/*
 	{
 		"name": "Pele",
